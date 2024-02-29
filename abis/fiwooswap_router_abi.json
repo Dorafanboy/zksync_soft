@@ -1,0 +1,188 @@
+[
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "fromToken",
+        "type": "address"
+      },
+      {
+        "name": "toToken",
+        "type": "address"
+      },
+      {
+        "name": "fromAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "querySwap",
+    "outputs": [
+      {
+        "name": "toAmount",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "fromToken",
+        "type": "address"
+      },
+      {
+        "name": "toToken",
+        "type": "address"
+      },
+      {
+        "name": "fromAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "tryQuerySwap",
+    "outputs": [
+      {
+        "name": "toAmount",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "fromToken",
+        "type": "address"
+      },
+      {
+        "name": "toToken",
+        "type": "address"
+      },
+      {
+        "name": "fromAmount",
+        "type": "uint256"
+      },
+      {
+        "name": "minToAmount",
+        "type": "uint256"
+      },
+      {
+        "name": "to",
+        "type": "address"
+      },
+      {
+        "name": "rebateTo",
+        "type": "address"
+      }
+    ],
+    "name": "swap",
+    "outputs": [
+      {
+        "name": "realToAmount",
+        "type": "uint256"
+      }
+    ],
+    "payable": true,
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "approveTarget",
+        "type": "address"
+      },
+      {
+        "name": "swapTarget",
+        "type": "address"
+      },
+      {
+        "name": "fromToken",
+        "type": "address"
+      },
+      {
+        "name": "toToken",
+        "type": "address"
+      },
+      {
+        "name": "fromAmount",
+        "type": "uint256"
+      },
+      {
+        "name": "minToAmount",
+        "type": "uint256"
+      },
+      {
+        "name": "to",
+        "type": "address"
+      },
+      {
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "name": "externalSwap",
+    "outputs": [
+      {
+        "name": "realToAmount",
+        "type": "uint256"
+      }
+    ],
+    "payable": true,
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "stuckToken",
+        "type": "address"
+      }
+    ],
+    "name": "inCaseTokenGotStuck",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "newPool",
+        "type": "address"
+      }
+    ],
+    "name": "setPool",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "target",
+        "type": "address"
+      },
+      {
+        "name": "whitelisted",
+        "type": "bool"
+      }
+    ],
+    "name": "setWhitelisted",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]
